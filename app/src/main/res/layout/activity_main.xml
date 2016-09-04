@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gridLayout"
+        android:layout_marginLeft="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quit_key"
+            android:id="@+id/QuitButton"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:enabled="true"
+            android:clickable="true"
+            android:background="#ec1616"
+            android:onClick="@string/quit_key"
+            android:layout_marginRight="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_key"
+            android:id="@+id/GenerateButton"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="@+id/drawRectangle"
+            android:clickable="true"
+            android:enabled="true"
+            android:background="#06f203"
+            android:layout_marginRight="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motion_menu"
+            android:id="@+id/MenuButton"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="#f7950b"
+            android:clickable="true"
+            android:enabled="true" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gridLayout2"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shrink_key"
+            android:id="@+id/ShrinkButton"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="@string/shrink_key" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expand_key"
+            android:id="@+id/ExpandButton"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="@string/expand_key" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotate_key"
+            android:id="@+id/RotateButton"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="@string/rotate_key" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotate_ccw"
+            android:id="@+id/ccwButton"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="@string/rotate_ccw" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/drawRectangle"
+        android:layout_height="@dimen/y"
+        android:layout_width="@dimen/x"
+        android:src="@drawable/rectangle"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:contentDescription="@string/rect_img">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area_text"
+        android:id="@+id/area"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:editable="false" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment_6</string>
+    <string name="quit_key">Quit</string>
+    <string name="generate_key">Generate</string>
+    <string name="shrink_key">Shrink</string>
+    <string name="expand_key">Expand</string>
+    <string name="rotate_key">Rotate CW</string>
+    <string name="rect_img">rectangle</string>
+    <string name="area_text">Area is: </string>
+    <string name="rotate_ccw">Rotate CCW</string>
+    <string name="motion_menu">Motion Menu</string>
+
+</resources>
